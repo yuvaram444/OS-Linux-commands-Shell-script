@@ -46,19 +46,19 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-
+![alt text](imgs/cat2.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![alt text](imgs/cat3.png)
 comm file1 file2
  ## OUTPUT
-
+![alt text](imgs/cat4.png)
  
 diff file1 file2
 ## OUTPUT
-
+![alt text](imgs/cat5.png)
 
 #Filters
 
@@ -82,17 +82,17 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-
+![alt text](imgs/cat6.png)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![alt text](imgs/cat7.png)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![alt text](imgs/cat8.png)
 
 cat < newfile 
 ```

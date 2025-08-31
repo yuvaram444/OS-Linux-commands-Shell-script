@@ -233,82 +233,83 @@ cat > file23
 ^d
 ```
 
+
 sed -n -e '3p' file23
 ## OUTPUT
-![alt text](imgs/cat-1.png)
+
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-![alt text](imgs/cat-2.png)
+
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-![alt text](imgs/cat-3.png)
+
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-![alt text](imgs/cat-4.png)
+
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-![alt text](imgs/cat-5.png)OUTPUT
 
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-![alt text](imgs/cat-6.png)
+
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-![alt text](imgs/cat-7.png)
+
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-![alt text](imgs/cat-8.png)
+
 
 
 seq 10 
 ## OUTPUT
-![alt text](imgs/cat-9.png)
+
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-![alt text](imgs/cat-10.png)
+
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-![alt text](imgs/cat-11.png)
+
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-![alt text](imgs/cat-12.png)
+
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-![alt text](imgs/cat-13i.png)
+
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-![alt text](imgs/cat-13.png)
+
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-![alt text](imgs/cat-14.png)
+
 
 
 sed -n '2,4{s/$/*/;p}' file23
+
 
 #Sorting File content
 cat > file21
@@ -321,7 +322,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-![alt text](imgs/cat-15.png)
+
 
 cat > file22
 ```
@@ -334,14 +335,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-![alt text](imgs/cat-16.png)
+
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-![alt text](imgs/cat-17.png)
+
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -357,19 +358,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-![alt text](imgs/cat-18.png)
+
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![alt text](imgs/cat-19.png)
+
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![alt text](imgs/cat-20.png)
-![alt text](imgs/cat-20-1.png)
+
 
 mkdir backupdir
  
@@ -379,11 +379,18 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![alt text](imgs/cat-21.png)
+
 
 tar -xvf backup.tar
 ## OUTPUT
-![alt text](imgs/cat-22.png)
+
+gzip backup.tar
+
+ls .gz
+## OUTPUT
+ 
+gunzip backup.tar.gz
+## OUTPUT
 
  
 # Shell Script

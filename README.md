@@ -106,40 +106,43 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
+![alt text](imgs/g-H.png)
 
 
 grep hello newfile 
 ## OUTPUT
-
+![alt text](imgs/g-h.png)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![alt text](imgs/g-v.png)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![alt text](imgs/c-i.png)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
+![alt text](imgs/g-i-c.png)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![alt text](imgs/g-r-1.png)
+![alt text](imgs/g-r-2.png)
+![alt text](imgs/g-r-3.png)
+![alt text](imgs/g-r-4.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![alt text](imgs/g-w-n.png)
 
 cat < newfile 
 ```
@@ -162,60 +165,60 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![alt text](imgs/c-11.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![alt text](imgs/c-12.png)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
-
+![alt text](imgs/c-13.png)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![alt text](imgs/c-14.png)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![alt text](imgs/c-15.png)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![alt text](imgs/c-16.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
-
+![alt text](imgs/c-17.png)
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![alt text](imgs/c-18.png)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![alt text](imgs/c-19.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![alt text](imgs/c-20.png)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![alt text](imgs/c-21.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![alt text](imgs/c-22.png)
 
 cat > file23
 ```
